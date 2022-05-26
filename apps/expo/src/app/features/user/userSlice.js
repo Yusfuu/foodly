@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  user: null
+  user: null,
+  darkMode: 0,
 };
 
 export const userSlice = createSlice({
@@ -14,10 +15,13 @@ export const userSlice = createSlice({
     logout: (state) => {
       state.user = null
     },
+    checkDarkMode: (state, action) => {
+      state.darkMode = state.darkMode + 1;
+    }
   },
 });
 
-export const { login, logout } = userSlice.actions;
+export const { login, logout , checkDarkMode } = userSlice.actions;
 
 export const selectUser = (state) => state.user.user;
 

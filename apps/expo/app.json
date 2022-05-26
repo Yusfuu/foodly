@@ -6,22 +6,17 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash/mysplash.png",
+      "image": "./assets/splash/mysplash.gif",
       "resizeMode": "cover"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": [
-          "location",
-          "fetch"
-        ]
+        "UIBackgroundModes": ["location", "fetch"]
       }
     },
     "android": {
@@ -29,9 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "permissions": [
-        "ACCESS_BACKGROUND_LOCATION"
-      ],
+      "permissions": ["ACCESS_BACKGROUND_LOCATION"],
       "package": "com.atlastrip.foodaly"
     },
     "web": {

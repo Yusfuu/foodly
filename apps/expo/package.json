@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "dev": "expo start",
     "adb": "expo start --localhost --android",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.5",
-    "@react-native-async-storage/async-storage": "^1.15.17",
+    "@react-native-async-storage/async-storage": "^1.17.5",
     "@react-native-community/checkbox": "^0.5.12",
+    "@react-native-menu/menu": "^0.5.2",
     "@react-navigation/bottom-tabs": "^6.2.0",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.4.0",
@@ -38,6 +39,7 @@
     "react-native-color-picker": "^0.6.0",
     "react-native-elements": "^3.4.2",
     "react-native-google-signin": "^2.1.1",
+    "react-native-ios-context-menu": "^1.7.5",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-maps": "0.29.4",
     "react-native-paper": "^4.11.2",

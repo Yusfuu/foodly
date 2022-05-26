@@ -84,7 +84,7 @@ const Profile = () => {
                 <Button
                   onPress={this.signOut}
                   title="LogOut"
-                  color="red"
+                  color="purple"
                 ></Button>
               )}
             </View>

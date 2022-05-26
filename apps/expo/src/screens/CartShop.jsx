@@ -29,7 +29,7 @@ export default function CartShop() {
       </View>
 
       <View style={[tw`w-full justify-between px-3`]}>
-        {cart.cart.map((item, index) => (
+        {cart?.cart?.map((item, index) => (
           <View
             key={index}
             style={[

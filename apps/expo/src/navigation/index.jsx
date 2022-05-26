@@ -5,6 +5,7 @@ import Home from "../screens/Home";
 import { Platform, Text, TouchableOpacity, View } from "react-native";
 import { COLORS, FONTS } from "../constants/theme";
 import Profile from "../screens/Profile";
+import Options from "../screens/Options";
 import CartShop from "../screens/CartShop";
 
 import Pharmacies from "../screens/Pharmacies";
@@ -16,12 +17,17 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { MenuInfo } from "../screens/MenuInfo";
 import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+
+
 
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
 
 function BottomTabNavigator() {
   const cart = useSelector((state) => state.cart);
+
+
 
   return (
     <BottomTab.Navigator
@@ -67,7 +73,7 @@ function BottomTabNavigator() {
         options={{
           title: "Foodaly",
           headerTitleAlign: "center",
-          headerStyle: { backgroundColor: "#fff" },
+          headerStyle: { backgroundColor: "#fff"},
           headerTintColor: "#000",
           headerTitleStyle: {
             color: COLORS.primary,
@@ -91,7 +97,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Settings"
-        component={Profile}
+        component={Options}
         options={{
           tabBarIcon: ({ focused }) => (
             <TabBarIcon

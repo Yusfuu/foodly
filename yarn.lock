@@ -3213,7 +3213,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@react-native-async-storage/async-storage@^1.15.17":
+"@react-native-async-storage/async-storage@^1.17.5":
   version "1.17.5"
   resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.17.5.tgz#8cc3edd305d09a3c252d88921f0d2846a0444f25"
   integrity sha512-0XT5zZa3mh8XfAFYytq9hPyI6w0FJEBED4pjeLc17pkNF9tND86fsTX2pQFr15uV0nvfYeHisbd/mM7bpGrWKA==
@@ -3348,6 +3348,11 @@
     strip-ansi "^5.2.0"
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
+
+"@react-native-menu/menu@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@react-native-menu/menu/-/menu-0.5.2.tgz#7b1ae8e41ee3b7306c4bf8b53b9e2cb78b4a829b"
+  integrity sha512-+ULWH3OXuirS4m03UhUkQj/G9q0wQo7LGDcxTyS12bVKQQ+yHwif4C3QcYy0zVIxwMPltCA7eOvsTThT0+B2xQ==
 
 "@react-native/assets@1.0.0":
   version "1.0.0"
@@ -12177,6 +12182,11 @@ react-native-google-signin@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-native-google-signin/-/react-native-google-signin-2.1.1.tgz#4281940eee88602b0181dd49affdf8c92980c85c"
   integrity sha512-6l3fiLdX/bfhh0BoxGq+jGkagFsO+mrE/eRV4+3/0k8+FDxO90vdPpQdDiwlM5vWXRxWthTzMM09/jHw+4cvNw==
+
+react-native-ios-context-menu@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/react-native-ios-context-menu/-/react-native-ios-context-menu-1.7.5.tgz#0f9b04fa79a19d81000601db1372674b7f4a1c37"
+  integrity sha512-2ut7aYcBN1LFsVXsgST0BIuEFi7uKyNDe01sQoz5j69jNf8hBNTqKUDJHlWWeIITYF9pJxVFskan4qusFI7/ag==
 
 react-native-iphone-x-helper@^1.0.3, react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"

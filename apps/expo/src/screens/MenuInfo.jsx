@@ -29,14 +29,14 @@ const Stars = ({ rating }) => {
             style={tw`mx-[1px]`}
             name="md-star"
             size={15}
-            color="red"
+            color="purple"
           />
         ))}
     </>
   );
 };
 
-const FoodOrder = ({ price, products }) => {
+const FoodOrder = ({ price, products , navigation }) => {
   const [count, setCount] = useState(1);
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
@@ -84,8 +84,9 @@ const FoodOrder = ({ price, products }) => {
               );
             });
             alert("menu added to cart");
+            navigation.navigate("Commande");
           }}
-          style={tw`p-2 rounded-2xl flex-row justify-between items-center bg-red-600`}
+          style={tw`p-2 rounded-2xl flex-row justify-between items-center bg-purple-600`}
         >
           <Ionicons name="md-cart" size={20} color="white" />
 
@@ -101,7 +102,7 @@ const FoodOrder = ({ price, products }) => {
 const Counter = ({ count, setCount }) => {
   return (
     <View
-      style={tw`flex-row justify-evenly items-center bg-red-600 w-[90px] p-1 rounded-full`}
+      style={tw`flex-row justify-evenly items-center bg-purple-600 w-[90px] p-1 rounded-full`}
     >
       <TouchableOpacity
         style={tw`px-2`}
@@ -173,7 +174,7 @@ export const MenuInfo = ({ navigation, route }) => {
           ))}
         </View>
       </ScrollView>
-      <FoodOrder price={price} products={food} />
+      <FoodOrder price={price} products={food} navigation={navigation} />
     </SafeAreaView>
   );
 };

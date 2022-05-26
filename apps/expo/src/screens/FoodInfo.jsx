@@ -27,7 +27,7 @@ const Stars = ({ rating }) => {
             style={tw`mx-[1px]`}
             name="md-star"
             size={15}
-            color="red"
+            color="purple"
           />
         ))}
     </>
@@ -52,7 +52,7 @@ export const FoodOrder = ({ price, product, quantity }) => {
           );
           alert("add to cart");
         }}
-        style={tw`p-2 rounded-2xl flex-row justify-between items-center bg-red-600`}
+        style={tw`p-2 rounded-2xl flex-row justify-between items-center bg-purple-600`}
       >
         <Ionicons name="md-cart" size={20} color="white" />
         <Text style={tw`text-2xl font-black ml-3 text-white`}>Add to Cart</Text>
@@ -64,7 +64,7 @@ export const FoodOrder = ({ price, product, quantity }) => {
 const Counter = ({ count, setCount }) => {
   return (
     <View
-      style={tw`flex-row justify-evenly items-center bg-red-600 w-[90px] p-1 rounded-full`}
+      style={tw`flex-row justify-evenly items-center bg-purple-600 w-[90px] p-1 rounded-full`}
     >
       <TouchableOpacity
         style={tw`px-2`}

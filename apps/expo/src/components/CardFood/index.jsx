@@ -46,7 +46,7 @@ export const CardFood = ({
         });
       }}
       style={[
-        tw`p-3 bg-red-600 max-w-[50vw] items-center  m-1 w-[45%] rounded-lg bg-white my-2`,
+        tw`p-3 bg-purple-600 items-center  m-1 w-[45%] rounded-lg bg-white my-2`,
         { maxWidth: windowWidth * 0.45 },
         style.shadow,
       ]}
@@ -88,7 +88,7 @@ export const CardFood = ({
             );
           }}
         >
-          <Ionicons name="md-cart" size={24} color="red" />
+          <Ionicons name="md-cart" size={24} color="purple" />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>

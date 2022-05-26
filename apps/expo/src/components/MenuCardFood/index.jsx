@@ -37,7 +37,7 @@ const Card = ({ navigation, item ,Food }) => {
             onLoadEnd={() => {
                 setImageLoaded(false);
             }}
-          style={tw`w-full h-full  rounded-full`}
+          style={tw`w-full h-full bg-gray-200 rounded-full`}
           source={{
             uri: item.image[0],
           }}
@@ -62,7 +62,7 @@ export const MenuCardFood = ({ menu, navigation , Food }) => {
               Food: Food,
             });
           }}
-        style={tw` text-sm rounded-full p-1 bg-red-600`}>
+        style={tw` text-sm rounded-full p-1 bg-purple-600`}>
           <Text style={tw`text-sm  text-white`}>View More</Text>
         </TouchableOpacity>
       </View>
